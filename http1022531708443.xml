@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="eef91020-0da3-49ea-b11a-23df1b924513" created="2.3.0" activeEnvironment="Default environment" name="REST Project 1" resourceRoot="${projectDir}" updated="2.3.0 2018-03-06T16:28:42Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">true</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+  </con:settings>
+  <con:interface xsi:type="con:RestService" id="292300be-663c-47fd-967e-0f8b32597e93" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://http:10.225.3.170:8443 2" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://http:10.225.3.170:8443</con:endpoint>
+      <con:endpoint>http://localhost:8088/</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Customer" path="/entity/customer" id="3237c58d-efac-46bc-8809-e673345a3210">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>customerName</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>customerAddress</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>customerAge</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>customerId</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="get customer" id="ee2ae7bc-8d9f-402d-affa-5e3dd05343bd" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="get customer" id="86209bf1-1980-45e2-834e-9d350712d857" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://10.225.3.170/entity/customer</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="customerAge" value=""/>
+            <con:entry key="dateOfPayment" value=""/>
+            <con:entry key="customerId" value=""/>
+            <con:entry key="productNumber" value=""/>
+            <con:entry key="productName" value=""/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>customerName</con:entry>
+            <con:entry>customerAddress</con:entry>
+            <con:entry>customerId</con:entry>
+            <con:entry>customerAge</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="post customer" id="9bc80d3b-097b-4169-a24f-7f7c589bee79" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="post customer" id="21a8eed5-5d58-4bc1-b147-6c003397406e" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://10.225.3.170/entity/customer</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="customerAddress" value="HCM"/>
+            <con:entry key="customerAge" value="13"/>
+            <con:entry key="dateOfPayment" value="2018/02/03"/>
+            <con:entry key="customerId" value=""/>
+            <con:entry key="productNumber" value=""/>
+            <con:entry key="productName" value="dddd"/>
+            <con:entry key="customerName" value="trang"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>customerName</con:entry>
+            <con:entry>customerAddress</con:entry>
+            <con:entry>customerId</con:entry>
+            <con:entry>customerAge</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="put customer" id="93efa519-c876-48c5-a4bb-c9738ef6d6d2" method="PUT">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:cus="http://10.225.3.170/entity/customer">cus:Response</con:element>
+        </con:representation>
+        <con:request name="put customer" id="d200e26d-046d-4533-99d7-d75c5947e823" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://10.225.3.170/entity/customer</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="customerAddress" value="ha noi"/>
+            <con:entry key="customerAge" value="23"/>
+            <con:entry key="dateOfPayment" value="2018/04/05"/>
+            <con:entry key="customerId" value="22"/>
+            <con:entry key="productNumber" value="4"/>
+            <con:entry key="productName" value="eewewee"/>
+            <con:entry key="customerName" value="tu"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>customerName</con:entry>
+            <con:entry>customerAddress</con:entry>
+            <con:entry>customerId</con:entry>
+            <con:entry>customerAge</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="delete customer" id="1b80ee63-5116-4902-af1d-f0b3d9d349e6" method="DELETE">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>405</con:status>
+          <con:params/>
+          <con:element xmlns:ns="http://10.225.3.170/entity/customer/10">ns:Fault</con:element>
+        </con:representation>
+        <con:request name="delete customer" id="31790bd0-7b89-4acf-955b-e9d60fd4dbdb" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://10.225.3.170/entity/customer/10</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <entry key="customerId" value="" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>customerName</con:entry>
+            <con:entry>customerAddress</con:entry>
+            <con:entry>customerAge</con:entry>
+            <con:entry>customerId</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="product]" path="/entity/product" id="5360cc70-ef47-418f-a10f-3137737ce13b">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>productNumber</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>productName</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>dateOfPayment</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>price</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="get product" id="123c0f93-3efb-49ab-8c93-a2b93fdea089" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="get product" id="19ae0d80-832b-44ba-b8b5-3ecbd3349ce9" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://10.225.3.170/entity/product</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="dateOfPayment" value=""/>
+            <con:entry key="price" value=""/>
+            <con:entry key="productNumber" value=""/>
+            <con:entry key="productName" value=""/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>productNumber</con:entry>
+            <con:entry>productName</con:entry>
+            <con:entry>dateOfPayment</con:entry>
+            <con:entry>price</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="post product" id="1c06defc-2494-4ca0-bd3f-84f87a66921d" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="post product" id="719c5884-af4f-45ae-83d5-770725358383" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://10.225.3.170/entity/product</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="dateOfPayment" value="2018/02/03"/>
+            <con:entry key="price" value="45"/>
+            <con:entry key="productNumber" value="28"/>
+            <con:entry key="productName" value="trang"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>productNumber</con:entry>
+            <con:entry>productName</con:entry>
+            <con:entry>dateOfPayment</con:entry>
+            <con:entry>price</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="put product" id="e3359938-643e-4160-87f2-68f6e9fd884f" method="PUT">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:prod="http://10.225.3.170/entity/product">prod:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="put product" id="d47613cd-32dd-4363-8444-de57cdd66aa4" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://10.225.3.170/entity/product</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="dateOfPayment" value="2018/06/05"/>
+            <con:entry key="price" value="50"/>
+            <con:entry key="productNumber" value="28"/>
+            <con:entry key="productName" value="tu"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>productNumber</con:entry>
+            <con:entry>productName</con:entry>
+            <con:entry>dateOfPayment</con:entry>
+            <con:entry>price</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="delete product" id="db879efd-b90e-4152-9673-89b27198f007" method="DELETE">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>405</con:status>
+          <con:params/>
+          <con:element xmlns:ns="http://10.225.3.170/entity/product/11">ns:Fault</con:element>
+        </con:representation>
+        <con:request name="delete product" id="f5a5d3a7-6965-45a1-b088-e92009d1f365" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://10.225.3.170/entity/product/11</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="dateOfPayment" value=""/>
+            <con:entry key="price" value=""/>
+            <con:entry key="productNumber" value=""/>
+            <con:entry key="productName" value=""/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>productNumber</con:entry>
+            <con:entry>productName</con:entry>
+            <con:entry>dateOfPayment</con:entry>
+            <con:entry>price</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="532584e3-5abe-4d99-bbc4-55780712a992" name="http://10.225.3.170:8443 TestSuite">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="b1672578-3b09-4b55-840b-375ab33d24e6" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="http://10.225.3.170:8443 TestCase" searchProperties="true" timeout="0">
+      <con:settings>
+        <con:setting id="IncludeOverview">true</con:setting>
+        <con:setting id="IncludeResults">true</con:setting>
+        <con:setting id="FlowLayout">true</con:setting>
+        <con:setting id="ErrorDetails">true</con:setting>
+        <con:setting id="IncludeCoverage">true</con:setting>
+      </con:settings>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="get customer - get customer" id="9f5d50ec-d624-462e-af6b-d426c50baff5">
+        <con:settings/>
+        <con:config service="http://http:10.225.3.170:8443 2" resourcePath="/entity/customer" methodName="get customer" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="get customer - get customer" id="86209bf1-1980-45e2-834e-9d350712d857" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://10.225.3.170/entity/customer</con:originalUri>
+            <con:assertion type="Simple Contains" id="bbc8ad55-ac55-46f2-b001-0d80c7ed99d6" name="Contains">
+              <con:configuration>
+                <token>2</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>true</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Count" id="d9eda755-e59e-4925-abb2-838bfb466ab4" name="JsonPath Count">
+              <con:configuration>
+                <path>$</path>
+                <content>20</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Valid HTTP Status Codes" id="a039a489-6faf-4c9b-9e49-1d80b3adaa7f" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="customerAge" value=""/>
+              <con:entry key="dateOfPayment" value=""/>
+              <con:entry key="customerId" value=""/>
+              <con:entry key="productNumber" value=""/>
+              <con:entry key="productName" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>customerName</con:entry>
+              <con:entry>customerAddress</con:entry>
+              <con:entry>customerId</con:entry>
+              <con:entry>customerAge</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="post customer - post customer" id="b9667069-3aa2-4a01-a482-32122f5e9715">
+        <con:settings/>
+        <con:config service="http://http:10.225.3.170:8443 2" resourcePath="/entity/customer" methodName="post customer" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="post customer - post customer" id="21a8eed5-5d58-4bc1-b147-6c003397406e" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://10.225.3.170/entity/customer</con:originalUri>
+            <con:assertion type="Simple Contains" id="883eb271-c989-49fd-b5b6-1d0f8eae8a1d" name="Contains">
+              <con:configuration>
+                <token/>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Valid HTTP Status Codes" id="df49e3c6-f533-46bc-9f7b-d642fc0f4a6f" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="customerAddress" value="HCM"/>
+              <con:entry key="customerAge" value="13"/>
+              <con:entry key="dateOfPayment" value="2018/02/03"/>
+              <con:entry key="customerId" value=""/>
+              <con:entry key="productNumber" value=""/>
+              <con:entry key="productName" value="dddd"/>
+              <con:entry key="customerName" value="trang"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>customerName</con:entry>
+              <con:entry>customerAddress</con:entry>
+              <con:entry>customerId</con:entry>
+              <con:entry>customerAge</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="put customer - put customer" id="63c96821-8ce6-4157-a5cf-b0a2dfb8b2f4">
+        <con:settings/>
+        <con:config service="http://http:10.225.3.170:8443 2" resourcePath="/entity/customer" methodName="put customer" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="put customer - put customer" id="d200e26d-046d-4533-99d7-d75c5947e823" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://10.225.3.170/entity/customer</con:originalUri>
+            <con:assertion type="Simple Contains" id="a3af1fa2-e8ff-4704-a8ea-c2f7b332ccc8" name="Contains">
+              <con:configuration>
+                <token>22</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>true</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Count" id="4cb258c1-bc00-4231-acaf-c6d75b8216a4" name="JsonPath Count">
+              <con:configuration>
+                <path>$</path>
+                <content>1</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Valid HTTP Status Codes" id="b9f99668-3051-4d2b-85d1-d9f7e4388ce1" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="customerAddress" value="ha noi"/>
+              <con:entry key="customerAge" value="23"/>
+              <con:entry key="dateOfPayment" value="2018/04/05"/>
+              <con:entry key="customerId" value="22"/>
+              <con:entry key="productNumber" value="4"/>
+              <con:entry key="productName" value="eewewee"/>
+              <con:entry key="customerName" value="tu"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>customerName</con:entry>
+              <con:entry>customerAddress</con:entry>
+              <con:entry>customerId</con:entry>
+              <con:entry>customerAge</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="delete customer - delete customer" id="391724a9-1623-42f0-bd14-5297f2438daf">
+        <con:settings/>
+        <con:config service="http://http:10.225.3.170:8443 2" resourcePath="/entity/customer" methodName="delete customer" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="delete customer - delete customer" id="31790bd0-7b89-4acf-955b-e9d60fd4dbdb" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://10.225.3.170/entity/customer/10</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="4d9ff7ce-c1f2-434b-96e5-c2965ef8238b" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>204</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <entry key="customerId" value="" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>customerName</con:entry>
+              <con:entry>customerAddress</con:entry>
+              <con:entry>customerAge</con:entry>
+              <con:entry>customerId</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="get product - get product" id="fc2b27a8-0569-4af5-8269-95781c8b029e">
+        <con:settings/>
+        <con:config service="http://http:10.225.3.170:8443 2" resourcePath="/entity/product" methodName="get product" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="get product - get product" id="19ae0d80-832b-44ba-b8b5-3ecbd3349ce9" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://10.225.3.170/entity/product</con:originalUri>
+            <con:assertion type="Simple Contains" id="01f361f2-31a9-41ab-9c15-2d73edf3483f" name="Contains">
+              <con:configuration>
+                <token>2</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>true</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Count" id="17a1aefb-33f0-45ba-ac60-5a2032f7871a" name="JsonPath Count">
+              <con:configuration>
+                <path>$</path>
+                <content>18</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Valid HTTP Status Codes" id="9078fd71-5637-42b8-b39b-c123a8bcfe33" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="dateOfPayment" value=""/>
+              <con:entry key="price" value=""/>
+              <con:entry key="productNumber" value=""/>
+              <con:entry key="productName" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>productNumber</con:entry>
+              <con:entry>productName</con:entry>
+              <con:entry>dateOfPayment</con:entry>
+              <con:entry>price</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="post product - post product" id="2197b037-8fb4-44de-985f-d505628486ce">
+        <con:settings/>
+        <con:config service="http://http:10.225.3.170:8443 2" resourcePath="/entity/product" methodName="post product" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="post product - post product" id="719c5884-af4f-45ae-83d5-770725358383" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://10.225.3.170/entity/product</con:originalUri>
+            <con:assertion type="Simple Contains" id="66db7607-7b1f-43e9-abc1-4f54a8b9598c" name="Contains">
+              <con:configuration>
+                <token/>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Valid HTTP Status Codes" id="43be7de5-f682-43c5-afa6-e3ff0862a5fa" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="dateOfPayment" value="2018/02/03"/>
+              <con:entry key="price" value="45"/>
+              <con:entry key="productNumber" value="28"/>
+              <con:entry key="productName" value="trang"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>productNumber</con:entry>
+              <con:entry>productName</con:entry>
+              <con:entry>dateOfPayment</con:entry>
+              <con:entry>price</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="put product - put product" id="7a9ad666-d49a-4d9a-89b2-6bc0527290a4">
+        <con:settings/>
+        <con:config service="http://http:10.225.3.170:8443 2" resourcePath="/entity/product" methodName="put product" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="put product - put product" id="d47613cd-32dd-4363-8444-de57cdd66aa4" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://10.225.3.170/entity/product</con:originalUri>
+            <con:assertion type="Simple Contains" id="8c77fc30-edab-460d-8849-6c71feb30fd8" name="Contains">
+              <con:configuration>
+                <token>28</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>true</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Count" id="c4e17b99-b506-418e-ba68-4f08e45a7f19" name="JsonPath Count">
+              <con:configuration>
+                <path>$</path>
+                <content>1</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Valid HTTP Status Codes" id="648b22d4-3b5b-4e86-9516-56bf848a88df" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="dateOfPayment" value="2018/06/05"/>
+              <con:entry key="price" value="50"/>
+              <con:entry key="productNumber" value="28"/>
+              <con:entry key="productName" value="tu"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>productNumber</con:entry>
+              <con:entry>productName</con:entry>
+              <con:entry>dateOfPayment</con:entry>
+              <con:entry>price</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="delete product - delete product" id="2a1a6f60-8ec6-4828-a5f3-a562d862872b">
+        <con:settings/>
+        <con:config service="http://http:10.225.3.170:8443 2" resourcePath="/entity/product" methodName="delete product" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="delete product - delete product" id="f5a5d3a7-6965-45a1-b088-e92009d1f365" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://10.225.3.170:8443</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://10.225.3.170/entity/product/11</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="66326642-a50c-46dc-9a21-ac3abcc4ef4a" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>204</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="dateOfPayment" value=""/>
+              <con:entry key="price" value=""/>
+              <con:entry key="productNumber" value=""/>
+              <con:entry key="productName" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>productNumber</con:entry>
+              <con:entry>productName</con:entry>
+              <con:entry>dateOfPayment</con:entry>
+              <con:entry>price</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:restMockService id="2ccc5ad8-da4a-452c-b6bf-e42f7131ab66" port="8088" path="/" host="localhost" name="http://http:10.225.3.170:8443 Virtual Service">
+    <con:settings/>
+    <con:properties/>
+    <con:constraints>
+      <con:congestion>0</con:congestion>
+      <con:inputBandwidth>-1</con:inputBandwidth>
+      <con:outputBandwidth>-1</con:outputBandwidth>
+      <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+      <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+      <con:virtError>
+        <con:start>0</con:start>
+        <con:endless>true</con:endless>
+      </con:virtError>
+    </con:constraints>
+    <con:headerValidator type="NONE"/>
+    <con:restMockAction name="/entity/customer" method="GET" resourcePath="/entity/customer" id="191441b4-6cd0-4920-af95-c65c78819fcd">
+      <con:settings/>
+      <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:dispatchXPath/>
+      <con:routeScript/>
+      <con:response name="Response 1" id="b439b3d7-072b-49f2-a327-fb9a9c3cf3b6" httpResponseStatus="200" mediaType="application/json" encoding="UTF-8" dataSource="">
+        <con:settings/>
+        <con:responseContent/>
+      </con:response>
+    </con:restMockAction>
+    <con:restMockAction name="/entity/customer" method="POST" resourcePath="/entity/customer" id="fecfab71-1061-41fa-9942-4475ecc51dec">
+      <con:settings/>
+      <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:dispatchXPath/>
+      <con:routeScript/>
+      <con:response name="Response 1" id="99215a89-ae96-416e-b921-4264f0207bf2" httpResponseStatus="200" dataSource="">
+        <con:settings/>
+      </con:response>
+    </con:restMockAction>
+    <con:restMockAction name="/entity/customer" method="PUT" resourcePath="/entity/customer" id="c483c194-0351-459f-bc1e-7d9fcafa222e">
+      <con:settings/>
+      <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:dispatchXPath/>
+      <con:routeScript/>
+      <con:response name="Response 1" id="eccfbf40-833e-41f1-bc5b-445e4f5796f3" httpResponseStatus="200" dataSource="">
+        <con:settings/>
+      </con:response>
+    </con:restMockAction>
+    <con:restMockAction name="/entity/customer" method="DELETE" resourcePath="/entity/customer" id="3b507507-9c1f-4a8c-b3a1-4a2ec380971d">
+      <con:settings/>
+      <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:dispatchXPath/>
+      <con:routeScript/>
+      <con:response name="Response 1" id="1b7d1a43-54c6-4f09-b35b-2576c7b1df2b" httpResponseStatus="200" dataSource="">
+        <con:settings/>
+      </con:response>
+    </con:restMockAction>
+  </con:restMockService>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
